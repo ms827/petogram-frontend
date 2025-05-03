@@ -86,11 +86,11 @@
     font-weight: 800;
   }
 
-  .text-title-l {
-    font-size: 18px;
-    line-height: 150%;
-    letter-spacing: -0.3%;
-    font-weight: 700;
+  .text-title-1 {
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: -3.5%;
+    font-weight: 500;
   }
 
   /* ========== Border Radius ========== */

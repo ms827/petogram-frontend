@@ -6,7 +6,7 @@ export default function Header() {
   //   const router = useRouter();
 
   return (
-    <div className="flex pt-12 pb-2 px-5">
+    <div className="flex pt-12 pb-2">
       <p className="text-logo text-primary">Petogram</p>
       <button className="ml-auto">
         <User size={24} />

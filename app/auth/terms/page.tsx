@@ -4,6 +4,7 @@ import { ChevronRight } from "lucide-react";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useRouter } from "next/navigation";
 import AuthHeader from "@/app/auth/_components/auth-header";
+import { Button } from "@/components/ui/button";
 
 const termsList = [
   { id: 1, label: "서비스 이용약관 동의", required: true },
@@ -72,16 +73,15 @@ export default function TermsPage() {
             ))}
           </div>
           {/* 확인 버튼 */}
-          <button
+          <Button
+            variant="primary"
             className={`w-full h-12 text-lg rounded-md font-medium mt-8 ${
-              allChecked
-                ? "bg-primary-black text-white"
-                : "bg-gray-4 text-gray-2"
+              !allChecked ? "opacity-50" : ""
             }`}
             disabled={!allChecked}
           >
             확인
-          </button>
+          </Button>
         </div>
       </div>
     </div>
