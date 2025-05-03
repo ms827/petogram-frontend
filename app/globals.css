@@ -5,6 +5,8 @@
 
 :root {
   --font-pretendard: "Pretendard", sans-serif;
+  --font-unbounded: "Unbounded", sans-serif;
+  --font-gmarket-sans: "GmarketSans", sans-serif;
 
   /* ========== Border Radius ========== */
   --radius: 0.625rem;
@@ -12,30 +14,15 @@
   --radius-sm: calc(var(--radius) - 4px);
 
   /* ========== Color Variables ========== */
-  --primary: oklch(0.205 0 0);
-  --primary-strong: #58ffbf;
-  --primary-gradient: #102b24;
-  --primary-foreground: oklch(0.985 0 0);
+  --primary: #ff720d;
+  --primary-black: #1c1c1c;
 
-  --label-strong: #000000;
-  --label: #2a2832;
-  --label-natural: #5e616e;
-  --label-alternative: #a7a9b4;
-  --label-assistive: #c8c9d0;
+  --gray-1: #828282;
+  --gray-2: #b4b4b4;
+  --gray-3: #e4e4e4;
+  --gray-4: #f2f4f6;
+  --gray-5: #fbfbfb;
 
-  --background-natural: #eeeff1;
-  --background-alternative: #f9fafa;
-
-  --line: #eeeff1;
-  --line-alternative: #f9fafa;
-  --line-strong: #d6d7dc;
-
-  --status-error: #e82929;
-
-  --component: #a7a9b4;
-  --component-strong: #d6d7dc;
-  --component-dimmer: rgba(0, 0, 0, 0.7);
-  --component-alternative: #f4f4f6;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -82,8 +69,12 @@
     font-family: var(--font-pretendard);
   }
 
-  .font-hakgyo-ansim {
-    font-family: var(--font-hakgyo-ansim);
+  .font-unbounded {
+    font-family: var(--font-unbounded);
+  }
+
+  .font-gmarket-sans {
+    font-family: var(--font-gmarket-sans);
   }
 
   /* ========== Typography ========== */
@@ -92,84 +83,6 @@
     line-height: 150%;
     letter-spacing: -0.3%;
     font-weight: 700;
-  }
-
-  .text-title-m {
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: -0.3%;
-    font-weight: 700;
-  }
-
-  .text-title-xs {
-    font-size: 12px;
-    line-height: 140%;
-    letter-spacing: -0.3%;
-    font-weight: 700;
-  }
-
-  .text-title-1 {
-    font-size: 24px;
-    line-height: 160%;
-    letter-spacing: 0%;
-    font-weight: 400;
-  }
-
-  .text-title-2 {
-    font-size: 20px;
-    line-height: 160%;
-    letter-spacing: 0%;
-    font-weight: 400;
-  }
-
-  .text-title-3 {
-    font-family: var(--font-hakgyo-ansim);
-    font-size: 16px;
-    line-height: 160%;
-    letter-spacing: 0%;
-    font-weight: 400;
-  }
-
-  .text-subtitle-l {
-    font-size: 18px;
-    line-height: 150%;
-    letter-spacing: -0.3%;
-    font-weight: 600;
-  }
-
-  .text-subtitle-s {
-    font-size: 14px;
-    line-height: 150%;
-    letter-spacing: -0.3%;
-    font-weight: 600;
-  }
-
-  .text-body-l {
-    font-size: 18px;
-    line-height: 150%;
-    letter-spacing: -0.3%;
-    font-weight: 400;
-  }
-
-  .text-body-m {
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: -0.3%;
-    font-weight: 400;
-  }
-
-  .text-body-s {
-    font-size: 14px;
-    line-height: 150%;
-    letter-spacing: -0.3%;
-    font-weight: 400;
-  }
-
-  .text-caption {
-    font-size: 12px;
-    line-height: 140%;
-    letter-spacing: -0.3%;
-    font-weight: 400;
   }
 
   /* ========== Border Radius ========== */
@@ -192,9 +105,6 @@
   .text-primary {
     color: var(--primary);
   }
-  .text-primary-foreground {
-    color: var(--primary-foreground);
-  }
   .bg-primary {
     background-color: var(--primary);
   }
@@ -202,94 +112,65 @@
     border-color: var(--primary);
   }
 
-  .text-primary-strong {
-    color: var(--primary-strong);
+  .text-primary-black {
+    color: var(--primary-black);
   }
-  .bg-primary-strong {
-    background-color: var(--primary-strong);
+  .bg-primary-black {
+    background-color: var(--primary-black);
   }
-
-  .bg-primary-gradient {
-    background-color: var(--primary-gradient);
-  }
-
-  /* ========== Label Colors ========== */
-  .text-label-strong {
-    color: var(--label-strong);
-  }
-  .text-label {
-    color: var(--label);
-  }
-  .text-label-natural {
-    color: var(--label-natural);
-  }
-  .text-label-alternative {
-    color: var(--label-alternative);
-  }
-  .text-label-assistive {
-    color: var(--label-assistive);
+  .border-primary-black {
+    border-color: var(--primary-black);
   }
 
-  /* ========== Component Colors ========== */
-  .text-component-alternative {
-    color: var(--component-alternative);
+  /* ========== gray ========== */
+  .text-gray-1 {
+    color: var(--gray-1);
   }
-  .bg-component-alternative {
-    background-color: var(--component-alternative);
+  .bg-gray-1 {
+    background-color: var(--gray-1);
   }
-
-  /* ========== Background ========== */
-  .bg-background {
-    background-color: var(--background);
-  }
-  .bg-background-natural {
-    background-color: var(--background-natural);
-  }
-  .bg-background-alternative {
-    background-color: var(--background-alternative);
+  .border-gray-1 {
+    border: 2px solid var(--gray-1);
   }
 
-  /* ========== Line ========== */
-  .border-line {
-    border-color: var(--line);
+  .text-gray-2 {
+    color: var(--gray-2);
   }
-  .text-line {
-    color: var(--line);
+  .bg-gray-2 {
+    background-color: var(--gray-2);
   }
-  .text-line-alternative {
-    color: var(--line-alternative);
-  }
-  .border-line-alternative {
-    border-color: var(--line-alternative);
-  }
-  .bg-line-alternative {
-    background-color: var(--line-alternative);
-  }
-  .border-line-strong {
-    border-color: var(--line-strong);
+  .border-gray-2 {
+    border: 2px solid var(--gray-2);
   }
 
-  /* ========== Status ========== */
-  .text-status-error {
-    color: var(--status-error);
+  .text-gray-3 {
+    color: var(--gray-3);
   }
-  .bg-status-error {
-    background-color: var(--status-error);
+  .bg-gray-3 {
+    background-color: var(--gray-3);
   }
-  .border-status-error {
-    border: 2px solid var(--status-error);
-  }
-
-  /* ========== Component ========== */
-  .text-component {
-    color: var(--component);
-  }
-  .text-component-strong {
-    color: var(--component-strong);
+  .border-gray-3 {
+    border: 2px solid var(--gray-3);
   }
 
-  .bg-component-dimmer {
-    background-color: var(--component-dimmer);
+  .text-gray-4 {
+    color: var(--gray-4);
+  }
+  .bg-gray-4 {
+    background-color: var(--gray-4);
+  }
+  .border-gray-4 {
+    border: 2px solid var(--gray-4);
+  }
+
+  .text-gray-5 {
+    color: var(--gray-5);
+  }
+  .bg-gray-5 {
+    background-color: var(--gray-5);
+  }
+  .border-gray-5 {
+    border: 2px solid var(--gray-5);
   }
 }
 @layer base {

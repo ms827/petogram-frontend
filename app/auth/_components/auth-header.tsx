@@ -17,7 +17,7 @@ export default function AuthHeader({ title }: { title: string }) {
       >
         <ChevronLeft size={24} />
       </button>
-      <span className="font-bold text-lg absolute left-1/2 transform -translate-x-1/2">
+      <span className="font-unbounded font-bold text-lg absolute left-1/2 transform -translate-x-1/2">
         {title}
       </span>
     </div>

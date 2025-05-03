@@ -38,6 +38,10 @@ export default function PrivacyTermsPage() {
             </tr>
           </tbody>
         </table>
+        <p className="text-xs mt-5">
+          개인정보의 수집 및 이용에 대한 동의를 거부하실 수 있으나 서비스의
+          이용이 제한됩니다.
+        </p>
       </div>
     </div>
   );

@@ -25,12 +25,17 @@ export default function MarketingTermsPage() {
                 행사, 이벤트 등의 광고성 정보 제공(이메일, 서신우편, SMS,
                 카카오톡 등)
               </td>
-              <td className="border px-2 py-2 align-top whitespace-pre-line">
+              <td className="border px-2 py-2 align-center whitespace-pre-line">
                 회원 탈퇴 후 30일 또는 동의 철회 시까지
               </td>
             </tr>
           </tbody>
         </table>
+        <p className="text-xs mt-5">
+          마케팅 정보 수신에 대한 동의를 거부하실 수 있으나 일부 서비스의 이용
+          및 각종 이용자 맞춤형 상품 추천등의 서비스 제공이 제한될 수 있습니다.
+          각종 이용자 맞춤형 상품 추천등의 서비스 제공이 제한될 수 있습니다.
+        </p>
       </div>
     </div>
   );

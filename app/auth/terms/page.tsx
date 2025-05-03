@@ -43,7 +43,7 @@ export default function TermsPage() {
           <Checkbox
             checked={allChecked}
             onCheckedChange={handleAll}
-            className="border-gray-300 bg-gray-100"
+            className="rounded-full bg-gray-4"
             aria-label="약관 전체 동의"
           />
           <span className="font-semibold text-lg text-gray-700">
@@ -57,7 +57,7 @@ export default function TermsPage() {
               <Checkbox
                 checked={checked[idx]}
                 onCheckedChange={() => handleCheck(idx)}
-                className="border-gray-200 bg-gray-100"
+                className=" bg-gray-4"
                 aria-label={term.label}
               />
               <span className="text-gray-500 text-base">{term.label}</span>
@@ -73,7 +73,7 @@ export default function TermsPage() {
         {/* 확인 버튼 */}
         <button
           className={`w-full h-12 rounded-md text-white text-lg font-medium ${
-            allChecked ? "bg-black" : "bg-gray-200"
+            allChecked ? "bg-primary-black" : "bg-gray-200"
           }`}
           disabled={!allChecked}
         >
