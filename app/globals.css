@@ -78,6 +78,14 @@
   }
 
   /* ========== Typography ========== */
+  .text-logo {
+    font-family: var(--font-unbounded);
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: -4%;
+    font-weight: 800;
+  }
+
   .text-title-l {
     font-size: 18px;
     line-height: 150%;

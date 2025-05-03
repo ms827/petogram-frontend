@@ -74,7 +74,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body
-        className={`${pretendard.variable} ${unbounded.variable} ${gmarketSans.variable} font-pretendard max-w-[650px] mx-auto`}
+        className={`${pretendard.variable} ${unbounded.variable} ${gmarketSans.variable} font-pretendard max-w-[600px] mx-auto`}
       >
         <AuthProvider>{children}</AuthProvider>
         {/* {children} */}
