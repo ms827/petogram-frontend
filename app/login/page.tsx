@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import GoogleLoginButton from "../auth/_components/google-login-button";
 
 export default function AuthPage() {
   return (
@@ -20,18 +20,7 @@ export default function AuthPage() {
         </p>
 
         <div className="w-full">
-          <Button className="w-full h-14 bg-[#4285F4] hover:bg-[#5086ec] text-white rounded-md flex items-center relative">
-            <Image
-              src="/icon/google.svg"
-              alt="Google"
-              width={24}
-              height={24}
-              className="absolute left-4"
-            />
-            <span className="text-base font-medium flex-1 text-center">
-              Google로 계속하기
-            </span>
-          </Button>
+          <GoogleLoginButton />
         </div>
       </div>
     </main>

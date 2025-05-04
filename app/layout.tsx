@@ -1,5 +1,5 @@
 import localFont from "next/font/local";
-import { AuthProvider } from "./context/AuthContext";
+// import { AuthProvider } from "./context/AuthContext";
 import { Unbounded } from "next/font/google";
 import "./globals.css";
 
@@ -76,8 +76,8 @@ export default function RootLayout({
       <body
         className={`${pretendard.variable} ${unbounded.variable} ${gmarketSans.variable} font-pretendard max-w-[600px] mx-auto`}
       >
-        <AuthProvider>{children}</AuthProvider>
-        {/* {children} */}
+        {/* <AuthProvider>{children}</AuthProvider> */}
+        {children}
       </body>
     </html>
   );
